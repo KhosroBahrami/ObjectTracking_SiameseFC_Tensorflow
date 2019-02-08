@@ -1,0 +1,90 @@
+{
+  "artifacts": [],
+  "command": "main",
+  "experiment": {
+    "base_dir": "/Users/khosrobahrami/Documents/khosro/ObjTrack/SiamFC-TensorFlow",
+    "dependencies": [
+      "numpy==1.14.1",
+      "sacred==0.7.4",
+      "tensorflow==1.6.0"
+    ],
+    "mainfile": "train_siamese_model.py",
+    "name": "SiamFC-3s-color-scratch",
+    "repositories": [],
+    "sources": [
+      [
+        "configuration.py",
+        "_sources/configuration_f2ba72f3fbe8a15c4e256306163a492e.py"
+      ],
+      [
+        "siamese_model.py",
+        "_sources/siamese_model_d4cb57a78aed039eca89a644edeb3035.py"
+      ],
+      [
+        "train_siamese_model.py",
+        "_sources/train_siamese_model_aba4d04d529258ab262a70d5ae499fc5.py"
+      ],
+      [
+        "utils/__init__.py",
+        "_sources/__init___d41d8cd98f00b204e9800998ecf8427e.py"
+      ],
+      [
+        "utils/misc_utils.py",
+        "_sources/misc_utils_72b59981b744ae2c09c7187de2e26f39.py"
+      ]
+    ]
+  },
+  "fail_trace": [
+    "Traceback (most recent call last):\n",
+    "  File \"/usr/local/lib/python3.6/site-packages/sacred/config/captured_function.py\", line 46, in captured_function\n    result = wrapped(*args, **kwargs)\n",
+    "  File \"train_siamese_model.py\", line 104, in main\n    model.build()\n",
+    "  File \"/Users/khosrobahrami/Documents/khosro/ObjTrack/SiamFC-TensorFlow/siamese_model.py\", line 210, in build\n    self.build_inputs()\n",
+    "  File \"/Users/khosrobahrami/Documents/khosro/ObjTrack/SiamFC-TensorFlow/siamese_model.py\", line 60, in build_inputs\n    self.dataloader = DataLoader(self.data_config, self.is_training())\n",
+    "  File \"/Users/khosrobahrami/Documents/khosro/ObjTrack/SiamFC-TensorFlow/datasets/dataloader.py\", line 56, in __init__\n    self.dataset_py = VID(config['input_imdb'], config['max_frame_dist'])\n",
+    "  File \"/Users/khosrobahrami/Documents/khosro/ObjTrack/SiamFC-TensorFlow/datasets/vid.py\", line 55, in __init__\n    with open(imdb_path, 'rb') as f:\n",
+    "FileNotFoundError: [Errno 2] No such file or directory: 'data/train_imdb.pickle'\n"
+  ],
+  "heartbeat": "2019-02-01T21:30:39.850247",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Core(TM) i5-5257U CPU @ 2.70GHz",
+    "hostname": "VE-SD-KBahrami-Mac.local",
+    "os": [
+      "Darwin",
+      "Darwin-17.7.0-x86_64-i386-64bit"
+    ],
+    "python_version": "3.6.5"
+  },
+  "meta": {
+    "command": "main",
+    "options": {
+      "--beat_interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print_config": false,
+      "--priority": null,
+      "--queue": false,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [],
+      "help": false,
+      "with": false
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2019-02-01T21:30:39.774164",
+  "status": "FAILED",
+  "stop_time": "2019-02-01T21:30:39.852481"
+}

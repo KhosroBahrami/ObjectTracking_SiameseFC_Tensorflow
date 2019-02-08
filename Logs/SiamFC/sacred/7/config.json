@@ -1,0 +1,9 @@
+{
+  "seed": 133173683,
+  "track_config": {
+    "log_dir": "Logs/SiamFC/track_model_inference/SiamFC-3s-color-scratch"
+  },
+  "train_config": {
+    "train_dir": "Logs/SiamFC/track_model_checkpoints/SiamFC-3s-color-scratch"
+  }
+}

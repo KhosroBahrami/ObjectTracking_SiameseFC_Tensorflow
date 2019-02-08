@@ -1,0 +1,78 @@
+{
+  "model_config": {
+    "adjust_response_config": {
+      "scale": 0.001,
+      "train_bias": true
+    },
+    "embed_config": {
+      "bn_epsilon": 1e-06,
+      "bn_momentum": 0.05,
+      "bn_scale": true,
+      "embedding_checkpoint_file": null,
+      "embedding_feature_num": 256,
+      "embedding_name": "convolutional_alexnet",
+      "init_method": "kaiming_normal",
+      "stride": 8,
+      "train_embedding": true,
+      "use_bn": true,
+      "weight_decay": 0.0005
+    },
+    "z_image_size": 127
+  },
+  "seed": 627410482,
+  "track_config": {
+    "include_first": false,
+    "log_dir": "Logs/SiamFC/track_model_inference/SiamFC-3s-color-scratch",
+    "log_level": 0,
+    "num_scales": 3,
+    "scale_damp": 0.59,
+    "scale_penalty": 0.9745,
+    "scale_step": 1.0375,
+    "upsample_factor": 16,
+    "upsample_method": "bicubic",
+    "window_influence": 0.176,
+    "x_image_size": 255
+  },
+  "train_config": {
+    "clip_gradients": null,
+    "gt_config": {
+      "rNeg": 0,
+      "rPos": 16
+    },
+    "log_every_n_steps": 10,
+    "lr_config": {
+      "initial_lr": 0.01,
+      "lr_decay_factor": 0.8685113737513527,
+      "num_epochs_per_decay": 1,
+      "policy": "exponential",
+      "staircase": true
+    },
+    "max_checkpoints_to_keep": null,
+    "optimizer_config": {
+      "momentum": 0.9,
+      "optimizer": "MOMENTUM",
+      "use_nesterov": false
+    },
+    "save_model_every_n_step": 6650.0,
+    "seed": 123,
+    "train_data_config": {
+      "batch_size": 8,
+      "epoch": 50,
+      "input_imdb": "data/train_imdb.pickle",
+      "max_frame_dist": 100,
+      "num_examples_per_epoch": 53200.0,
+      "prefetch_capacity": 120,
+      "prefetch_threads": 4,
+      "preprocessing_name": "siamese_fc_color"
+    },
+    "train_dir": "Logs/SiamFC/track_model_checkpoints/SiamFC-3s-color-scratch",
+    "validation_data_config": {
+      "batch_size": 8,
+      "input_imdb": "data/validation_imdb.pickle",
+      "max_frame_dist": 100,
+      "prefetch_capacity": 120,
+      "prefetch_threads": 1,
+      "preprocessing_name": "None"
+    }
+  }
+}

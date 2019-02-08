@@ -1,0 +1,14 @@
+INFO - SiamFC-3s-color-scratch - Running command 'main'
+INFO - SiamFC-3s-color-scratch - Started run with ID "5"
+INFO - root - nvidia-ml-py is not installed, automatically select gpu is disabled!
+INFO - root - preproces -- siamese_fc_color
+INFO - root - embedding init method -- kaiming_normal
+INFO - root - preproces -- None
+2019-02-04 15:11:07.411731: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+INFO - root - Train for 332500 steps
+INFO - root - 2019-02-04 15:11:12.266051: step 0, total loss = 3.12, batch loss = 2.55 (1.8 examples/sec; 4.442 sec/batch; 410h:14m:07s remains)
+INFO:tensorflow:Logs/SiamFC/track_model_checkpoints/SiamFC-3s-color-scratch/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+INFO - tensorflow - Logs/SiamFC/track_model_checkpoints/SiamFC-3s-color-scratch/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+INFO - root - 2019-02-04 15:11:54.512278: step 10, total loss = 1.58, batch loss = 1.02 (2.2 examples/sec; 3.645 sec/batch; 336h:40m:33s remains)
+INFO - root - 2019-02-04 15:12:35.654597: step 20, total loss = 1.10, batch loss = 0.53 (1.8 examples/sec; 4.457 sec/batch; 411h:36m:58s remains)
+INFO - root - 2019-02-04 15:13:16.538760: step 30, total loss = 1.00, batch loss = 0.44 (2.1 examples/sec; 3.817 sec/batch; 352h:29m:55s remains)
