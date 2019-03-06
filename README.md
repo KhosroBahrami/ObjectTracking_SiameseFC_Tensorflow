@@ -21,23 +21,12 @@ pip install opencv-python  # Opencv for processing images
 
 
 ## Datasets
-For training & testing, I used Pascal VOC datasets (2007 and 2012). 
-To prapare tha datasets:
-1. Download VOC2007 and VOC2012 datasets. I assume the data is stored in /datasets/
-```
-$ cd datasets
-$ wget http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
-$ wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtrainval_06-Nov-2007.tar
-$ wget http://host.robots.ox.ac.uk/pascal/VOC/voc2007/VOCtest_06-Nov-2007.tar
-```
-2. Convert the data to Tensorflow records:
-```
-$ tar -xvf VOCtrainval_11-May-2012.tar
-$ tar -xvf VOCtrainval_06-Nov-2007.tar
-$ tar -xvf VOCtest_06-Nov-2007.tar
-$ python3 ssd_image_to_tf.py
-```
-The resulted tf records will be stored into tfrecords_test and tfrecords_train folders.
+For training & testing, I used ILSVRC2015 dataset. 
+To prepare the datasets:
+1. Download VOC2007 and VOC2012 datasets from http://image-net.org/challenges/LSVRC/2015/
+2. Copy the data into ILSVRC2015
+
+
 
 ## Configuration
 Before running the code, you need to touch the configuration based on your needs. There is a config files in /configuration:
