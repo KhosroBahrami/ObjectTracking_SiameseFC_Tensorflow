@@ -24,7 +24,7 @@ pip install opencv-python  # Opencv for processing images
 For training & testing, I used ILSVRC2015 dataset. 
 To prepare the datasets:
 1. Download VOC2007 and VOC2012 datasets from http://image-net.org/challenges/LSVRC/2015/
-2. Copy the data into ILSVRC2015
+2. Copy the data into /ILSVRC2015 folder
 
 
 
