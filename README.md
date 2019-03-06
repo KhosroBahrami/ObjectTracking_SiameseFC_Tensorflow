@@ -1,10 +1,11 @@
 # ObjectTracking based on SiameseFC using Tensorflow
 
+This is a TensorFlow implementation of Fully-Convolutional Siamese Networks for Object Tracking published in [paper](https://arxiv.org/abs/1606.09549). This repository contains a TensorFlow re-implementation of SiameseFC which is inspired by the previous implementations. However, this code has clear pipelines for train, test and demo; it is modular that can be extended or can be used for new applications.
 
-
-
-## Introduction
-...
+This implementation is designed with the following goals:
+- Clear Pipeline: it has full pipeline of object detection for demo, test and train with seperate modules.
+- Modularity: This code is modular and easy to expand for any specific application or new ideas.
+- To be deployed on Embedded Systems 
 
 
 
@@ -98,7 +99,6 @@ The Training module has the following 2 steps:
 
 
 # How SiameseFC works?
-...
-
+SiameseFC is a tracking algorithm with a novel fully-convolutional Siamese network trained end-to-end on the ILSVRC15 dataset for object detection in video. It operates at frame-rates beyond real-time and, despite its extreme simplicity, achieves state-of-the-art performance in multiple benchmarks. To tack an object in a video, the object should be identified by a rectangle in the first frame. 
 
 ![Alt text](figs/siamesefc.jpg?raw=true "SiameseFC")
