@@ -101,4 +101,4 @@ The Training module has the following 2 steps:
 ...
 
 
-![Alt text](figs/siamesefc.png?raw=true "SiameseFC")
+![Alt text](figs/siamesefc.jpg?raw=true "SiameseFC")
