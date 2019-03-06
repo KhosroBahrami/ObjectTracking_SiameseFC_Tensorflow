@@ -1,4 +1,4 @@
-# ObjectTracking based on SiameseFC using Tensorflow
+# Object Tracking based on SiameseFC using Tensorflow
 
 This is a TensorFlow implementation of Fully-Convolutional Siamese Networks for Object Tracking published in [paper](https://arxiv.org/abs/1606.09549). This repository contains a TensorFlow re-implementation of SiameseFC which is inspired by the previous implementations. However, this code has clear pipelines for train, test and demo; it is modular that can be extended or can be used for new applications.
 
