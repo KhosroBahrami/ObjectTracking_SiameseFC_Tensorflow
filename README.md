@@ -30,7 +30,7 @@ To prepare the datasets:
 
 ## Configuration
 Before running the code, you need to touch the configuration based on your needs. There is a config files in /configuration:
-- configuration.py: this file includes the common parameters that are used in training, testing and demo.   
+- configuration.py: this file includes the parameters that are used in training, testing and demo.   
 
 
 ## Demo of SiameseFC
@@ -43,14 +43,13 @@ To run the demo, use the following command:
 python3 siamesefc_demo.py
 ```
 The demo module has the following 5 steps:
-1) Load Siamese inference Model 
-2) Load input Video
-3) Run Tracker
+1) Load siamese inference model 
+2) Load input video
+3) Run tracker
 4) Store bounding boxes
-5) Visualization & Evaluation
+5) Visualization & evaluation
 
-The Output of demo is the video with tracking bounding boxes. 
-
+The output of demo is the video with tracking bounding boxes. 
 
 
 ## Evaluating (Testing) SiameseFC 
@@ -58,17 +57,15 @@ This module evaluates the accuracy of SiameseFC with a pretrained model (stored 
 
 To test the SiameseFC, use the following command:
 ```python
-# Run test of SSD
+# Run test of SiameseFC for a video
 python3 siamesefc_test.py
 ```
 Evaluation module has the following 5 steps:
-1) Load Siamese inference Model 
-2) Load input Video
-3) Run Tracker
+1) Load siamese inference model 
+2) Load input video
+3) Run tracker
 4) Store bounding boxes
 5) Evaluation
-
-
 
 
 ## Training SiameseFC
@@ -80,7 +77,7 @@ To train the SiameseFC, use the following command:
 python3 siamesefc_train.py
 ```
 
-The Training module has the following 2 steps:
+The training module has the following 2 steps:
 1) Create model (training and validation)
 2) Training
 
