@@ -89,8 +89,13 @@ SiameseFC is a tracking algorithm with a novel fully-convolutional Siamese netwo
 
 By having the location of the object in the first frame of video, to find the position of the object in the next frame, we can then exhaustively test all possible locations and choose the candidate with the maximum similarity to the appearance of the object in the previous frame. In experiments, the initial appearance of the object is used as the exemplar. 
 
+<!--
 ![Alt text](figs/siamesefc.jpg?raw=true "SiameseFC")
+-->
 
+<p align="center">
+  <img  src="figs/siamesefc.jpg" alt="alt text" width="70%" height="70%">
+</p>
 
 
 ### Training
