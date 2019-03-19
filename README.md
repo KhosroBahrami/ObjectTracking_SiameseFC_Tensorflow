@@ -94,7 +94,7 @@ By having the location of the object in the first frame of video, to find the po
 -->
 
 <p align="center">
-  <img  src="figs/siamesefc.jpg" alt="alt text" width="70%" height="70%">
+  <img  src="figs/siamesefc.jpg" alt="alt text" width="70%" height="70%" title="Siamese network for object tracking">
 </p>
 
 
@@ -109,7 +109,7 @@ The output of this network is not a single score but rather a score map defined 
 
 ### Tracking
 During tracking, we use a search image centered at the object in the previous frame. The position of the maximum score relative to the center of the score map, multiplied by the stride of the network, gives the displacement of the target from frame to frame. Multiple scales are searched in a single forward-pass by assembling a mini-batch of scaled images. 
-Combining feature maps using cross-correlation and evaluating the network once on the larger search image is mathematically equivalent to combining feature maps using the inner product and evaluating the network on each translated sub-window independently. However, the cross-correlation layer provides an incredibly simple method to implement this operation efficiently within the framework of existing conv-net libraries. While this is clearly useful during testing, it can also be exploited during training.
+Combining feature maps using cross-correlation and evaluating the network once on the larger search image is mathematically equivalent to combining feature maps using the inner product and evaluating the network on each translated sub-window independently. However, the cross-correlation layer provides an incredibly simple method to implement this operation efficiently within the framework of existing conv-net libraries. 
 
 
 
