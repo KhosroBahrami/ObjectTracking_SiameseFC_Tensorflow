@@ -85,11 +85,13 @@ The training module has the following 2 steps:
 
 
 # How SiameseFC works?
-SiameseFC is a tracking algorithm with a novel fully-convolutional Siamese network trained end-to-end on the ILSVRC15 dataset for object detection in video. It operates at frame-rates beyond real-time and, despite its extreme simplicity, achieves state-of-the-art performance in multiple benchmarks. To tack an object in a video, the object should be identified by a rectangle in the first frame. The following fihure shows the concept of Siamese fully convolutional network.
+SiameseFC is a tracking algorithm with a novel fully-convolutional Siamese network trained end-to-end on the ILSVRC15 dataset for object detection in video. It operates at frame-rates beyond real-time and, despite its extreme simplicity, achieves state-of-the-art performance in multiple benchmarks. To tack an object in a video, the object should be identified by a rectangle in the first frame. The following figure shows the concept of Siamese fully convolutional network.
+
+By having the location of the object in the first frame of video, to find the position of the object in the next frame, we can then exhaustively test all possible locations and choose the candidate with the maximum similarity to the appearance of the object in the previous frame. In experiments, the initial appearance of the object is used as the exemplar. 
 
 ![Alt text](figs/siamesefc.jpg?raw=true "SiameseFC")
 
-By having the location of the object in the first frame of video, to find the position of the object in the next frame, we can then exhaustively test all possible locations and choose the candidate with the maximum similarity to the appearance of the object in the previous frame. In experiments, the initial appearance of the object is used as the exemplar. 
+
 
 ### Training
 In the training of the siamese network, the goal is to learn a function f (a deep convolutional network) from a dataset of videos with labelled object trajectories. Similarity learning with deep conv-nets is typically addressed using Siamese architectures. Siamese networks apply an identical transformation φ to both inputs and then combine their representations using another function g according to f (z, x) = g(φ(z), φ(x)). When the function g is a simple distance or similarity metric, the function φ can be considered an embedding. Deep Siamese conv-nets have previously been applied to tasks such as face verification, keypoint descriptor learning and one-shot character recognition. 
