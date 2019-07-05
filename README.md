@@ -85,7 +85,7 @@ The training module has the following 2 steps:
 
 
 # How SiameseFC works?
-SiameseFC is a tracking algorithm with a novel fully-convolutional Siamese network trained end-to-end on the ILSVRC15 dataset for object detection in video. It operates at frame-rates beyond real-time and, despite its extreme simplicity, achieves state-of-the-art performance in multiple benchmarks. To tack an object in a video, the object should be identified by a rectangle in the first frame. The following figure shows the concept of Siamese fully convolutional network.
+SiameseFC is a tracking algorithm with a novel fully-convolutional Siamese network trained end-to-end on the ILSVRC15 dataset for object detection in video. It operates at frame-rates beyond real-time, and achieves state-of-the-art performance in multiple benchmarks. To track an object in a video, the object should be identified by a rectangle in the first frame. The following figure shows the concept of Siamese fully convolutional network.
 
 By having the location of the object in the first frame of video, to find the position of the object in the next frame, we can then exhaustively test all possible locations and choose the candidate with the maximum similarity to the appearance of the object in the previous frame. In experiments, the initial appearance of the object is used as the exemplar. 
 
